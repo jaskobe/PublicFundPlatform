@@ -12,8 +12,8 @@ body {
     color: #797979;
     background: #f1f2f7;
     font-family: 'Open Sans', sans-serif;
-    padding: 0px !important;
-    margin: 0px !important;
+    padding: 0 !important;
+    margin: 0 !important;
     font-size:13px;
 }
 
@@ -3941,4 +3941,11 @@ span.customSelect.changed {
 }
 .customSelectInner {
     background:url(../img/customSelect-arrow.gif) no-repeat center right;
+}
+
+
+//custom css
+.form-btn{
+    width: 120px;
+    margin-right: 10px;
 }
