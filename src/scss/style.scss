@@ -27,11 +27,11 @@ a, a:hover, a:focus {
 }
 
 ::selection {
-    background: #FF6C60;
+    background: #6183B9;
     color: #fff;
 }
 ::-moz-selection {
-    background: #FF6C60;
+    background: #6183B9;
     color: #fff;
 }
 
@@ -168,7 +168,10 @@ a, a:hover, a:focus {
     width: 180px;
     height: 100%;
     position: fixed;
-    background: #2a3542;
+    background: #403B4A; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #7360A7 , #49AFCF); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #7360A7 , #49AFCF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .nav-collapse.collapse {
@@ -218,7 +221,7 @@ ul.sidebar-menu li ul.sub li a {
 }
 
 ul.sidebar-menu li ul.sub li a:hover, ul.sidebar-menu li ul.sub li.active a {
-    color: #FF6C60;
+    color: #fff;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
@@ -243,7 +246,7 @@ ul.sidebar-menu li a span{
 }
 
 ul.sidebar-menu li a{
-    color: #8b9199;
+    color: #fff;
     text-decoration: none;
     display: block;
     padding: 15px 0 15px 10px;
@@ -257,7 +260,7 @@ ul.sidebar-menu li a{
 }
 
 ul.sidebar-menu li.active a, ul.sidebar-menu li a:hover, ul.sidebar-menu li a:focus {
-    background: #35404d;
+    background: rgba(21, 25, 30, 0.55);
     color: #fff;
     display: block;
     border-radius: 4px;
@@ -277,11 +280,11 @@ ul.sidebar-menu li a i {
 }
 
 ul.sidebar-menu li a:hover i, ul.sidebar-menu li a:focus i {
-    color: #FF6C60;
+    color: #fff;
 }
 
 ul.sidebar-menu li.active a i {
-    color: #FF6C60;
+    color: #fff;
 }
 
 
@@ -3948,4 +3951,13 @@ span.customSelect.changed {
 .form-btn{
     width: 120px;
     margin-right: 10px;
+}
+.btn-save{
+    background-color: #6183B9;
+    color: #fff;
+}
+
+.form-content{
+    padding-top: 7px;
+    font-size: 14px;
 }

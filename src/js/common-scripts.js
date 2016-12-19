@@ -1,6 +1,16 @@
 var Script = function () {
 
 
+//        导航状态
+    var url_path = window.location.pathname.split("/")[1];
+    var nav_li = $('#sidebar .sub-menu');
+    nav_li.each(function(){
+        var $this = $(this);
+        var href = $this.find("a").attr("href");
+        if(href == url_path){
+            $this.addClass("active");
+        }
+    });
 
 //    sidebar dropdown menu
 
@@ -70,9 +80,9 @@ var Script = function () {
     });
 
 // custom scrollbar
-    $("#sidebar").niceScroll({styler:"fb",cursorcolor:"#e8403f", cursorwidth: '3', cursorborderradius: '10px', background: '#404040', cursorborder: ''});
+    $("#sidebar").niceScroll({styler:"fb",cursorcolor:"#00559C", cursorwidth: '3', cursorborderradius: '10px', background: '#404040', cursorborder: ''});
 
-    $("html").niceScroll({styler:"fb",cursorcolor:"#e8403f", cursorwidth: '6', cursorborderradius: '10px', background: '#404040', cursorborder: '', zindex: '1000'});
+    $("html").niceScroll({styler:"fb",cursorcolor:"#00559C", cursorwidth: '6', cursorborderradius: '10px', background: '#404040', cursorborder: '', zindex: '1000'});
 
 // widget tools
 
