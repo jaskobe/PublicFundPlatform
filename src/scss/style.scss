@@ -9,12 +9,12 @@ Website: http://thevectorlab.net/
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
 
 body {
-    color: #797979;
+    color: #005fa6;
     background: #f1f2f7;
     font-family: 'Open Sans', sans-serif;
     padding: 0 !important;
     margin: 0 !important;
-    font-size:13px;
+    font-size:14px;
 }
 
 ul li {
@@ -250,7 +250,7 @@ ul.sidebar-menu li a{
     text-decoration: none;
     display: block;
     padding: 15px 0 15px 10px;
-    font-size: 12px;
+    font-size: 14px;
     outline: none;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
@@ -3953,7 +3953,7 @@ span.customSelect.changed {
     margin-right: 10px;
 }
 .btn-save{
-    background-color: #6183B9;
+    background-color: #005fa6;
     color: #fff;
 }
 
