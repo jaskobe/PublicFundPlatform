@@ -383,7 +383,11 @@ a.logo:hover, a.logo:focus {
 a.logo span {
     color: #FF6C60;
 }
-
+@media all and (max-width: 500px){
+    a.logo{
+        display: none;
+    }
+}
 
 /*notification*/
 
